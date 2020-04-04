@@ -1,0 +1,71 @@
+<html>
+
+<div id="tag1"></div>
+<div id="tag2"></div>
+<div id="tag3"></div>
+<div id="tag4"></div>
+<div style="border: 1px solid black" ></div>
+<div id="tag5"></div>
+<div style="border: 1px solid black" ></div>
+<div id="tag6"></div>
+<div style="border: 1px solid black" ></div>
+<div id="tag7"></div>
+<script>
+var str = "abc/defg/hij/k";
+document.getElementById("tag1").innerHTML = str.length;
+document.getElementById("tag2").innerHTML = str.substring(0,6);
+document.getElementById("tag3").innerHTML = str.substring(6,11);
+
+document.getElementById("tag2").innerHTML = str.substr(0,6);
+document.getElementById("tag3").innerHTML = str.substr(6,5);
+
+var a = str.indexOf("d");
+document.getElementById("tag4").innerHTML = a;
+
+var arr = str.split("/");
+document.getElementById("tag1").innerHTML = arr[0];
+document.getElementById("tag2").innerHTML = arr[1];
+document.getElementById("tag3").innerHTML = arr[2];
+document.getElementById("tag4").innerHTML = arr[3];
+
+// for 문
+for (var i=0; i<str.length; i++) {
+	// if 문
+	if (str.charAt(i) == "/") {
+		document.getElementById("tag5").innerHTML += "<div>" + "~" + "</div>";
+	} else if (str.charAt(i) == "e") {
+		document.getElementById("tag5").innerHTML += "<div>" + "!" + "</div>";
+	} else if (str.charAt(i) == "i") {
+		document.getElementById("tag5").innerHTML += "<div>" + "+" + "</div>";
+	} else {
+		document.getElementById("tag5").innerHTML += "<div>" + str.charAt(i) + "</div>";
+	}
+	
+	// switch 문
+	/*switch(str.charAt(i)) {
+		case "/" :
+			document.getElementById("tag5").innerHTML += "<div>" + "~" + "</div>";
+		break;
+		case "e" :
+			document.getElementById("tag5").innerHTML += "<div>" + "!" + "</div>";
+		break;
+		default:
+			document.getElementById("tag5").innerHTML += "<div>" + str.charAt(i) + "</div>";
+		break;
+	}
+	*/
+}
+// while 문
+var ii = 0;
+while(ii < str.length) {
+	document.getElementById("tag6").innerHTML += "<div>" + str.charAt(ii) + "</div>";
+	ii++;
+}
+// do ~ while 문
+var iii = 0;
+do {
+	document.getElementById("tag7").innerHTML += "<div>" + str.charAt(iii) + "</div>";
+	iii++;
+} while(iii < str.length);
+</script>
+</html>
