@@ -6,9 +6,11 @@
 	<title>문서 제목</title>
 
 	<script>
+	
 		function buttonon() {
 			alert("버튼이 눌렸습니다.");
-			window.document.myform.submit();
+			
+			window.document.myform.submit(); //submit(메소드):자료를 내보낸다
 		}
 		
 	</script>
@@ -28,17 +30,25 @@
 	
 </head>
 <body>
-	<form name="myform" action="study3.html">
-		아이디: <input type="text" name="userid"><br>
-		패스워드: <input type="password" name="userpass"><br>
-		<input type="button" value="input 버튼" onclick="buttonon()"><br>
-		<button>버튼 태그</button><br>
-		<input type="submit" value="서브밋"><br>
+	<form name="myform" action="study3.html" >
+		아이디 : <input type="text" name="userid" /> <br/>
+		패스워드 : <input type="password" name="userpass" /> <br/>
+		
+		
+		
+		<input type="button" value="input 버튼" onclick="buttonon()" /> <br/>
+		
+		<button>버튼 태그</button> <br/>
+		
+		<input type="submit" value="서브밋" /> <br/>
+		
 		<input type="image" src="https://s.pstatic.net/static/www/img/2018/sp_login_v180727.png" /> <br/>
-		<input type="reset" value="리셋"><br>
-		<a href="javascript:buttonon()">버튼</a>
-		<div onclick="buttonon()">div 버튼</div>
+		
+		<input type="reset" value="리셋" /> <br/>
+		
+		<a href="javascript:buttonon()">버튼</a> <br/>
+		
+		<span onclick="buttonon()">div 버튼</span>
 	</form>
-	
 </body>
 </html>

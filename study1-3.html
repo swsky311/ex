@@ -9,35 +9,27 @@
 		#div1{
 			background-color: yellow;
 			width: 45%;
-			_display: inline-block;
+			display: inline-block;
+			_border:1px solid red;
+		}	
+		/* .div-a{
+			border:1px solid red;
+		} */
+		div[name="div-b"]{
+			border:1px solid red;
 		}
-		div[name="b-div"]{border:1px solid red;}
-
+			
 		#div2{
 			background-color: aqua;
 			width: 45%;
-			_display: inline-block;
+			display: inline-block;
 		}
 		span{
 			background-color: red;
-		}
-		p{
-			width: 400px;
-		}
-		table{
-			border:1px solid blue;
-		}
-		table>thead>tr>td{
-			border:1px solid blue;
-		}
-		tbody>tr>td{
-			border:1px solid blue;
-		}
-		a{display: block;}
-		iframe{
-			width: 500px;
-			height: 500px;
-		}
+			_display: block;
+		}	
+		table{border:1px solid blue;}
+		table td{border:1px solid blue;}
 	</style>
 </head>
 <body>
@@ -45,54 +37,54 @@
 	<h2>Hello World!!</h2>
 	<h3>Hello World!!</h3>
 	<h4>Hello World!!</h4>
-
-	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20170315064553027.png">
-	<div id="div1" class="a-div" name="b-div">
-		<input type="text"><br>
-		<input type="radio" name="a" id="d"><label for="d">여자</label>
-		<label><input type="radio" name="a" id="e">남자</label><br>
-		<input type="checkbox" name="g">콜라
-		<input type="checkbox" name="g">사이다
-		<input type="checkbox" name="g">소주<br>
-		<select>
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-		</select>
-		<textarea>
-			
-		</textarea>
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20170315064553027.png" alt="">
+	<div id="div1" class="div-a" name="div-b">
+	<input type="text"><br>
+	<input type="radio" name="a" id="d"><label for="d">여자</label>
+	<label><input type="radio" name="a">남자</label><br>
+	<input type="checkbox" name="e">콜라
+	<input type="checkbox" name="e">사이다
+	<input type="checkbox" name="e">소주<br>
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<textarea>
+		
+	</textarea>
 	</div>
-
-	<div id="div2">
-		div2
-	</div>
-	<span>
-		span
-	</span><br>
+	<div id="div2">div2</div>
+	<span>span</span><br>
 	김수원<br>
 	김수원
 	김수원
-	<p>홈짱닷컴의 홈페이지 제작강좌는 초보자를 대상으로 합니다. 그러므로 가능한 쉬운 용어를 일관성 있게 사용할려고 노력하고 있습니다.</p>
-	<p>홈짱닷컴의 HTML 강좌는 단순히 화면에 출력되는 문서의 모양만 설명하지 않고 보다 의미있는 HTML 문서를 작성하는 방법을 추구하고 있습니다.</p>
-	한글<br>
-	만세
+	<hr>
+	<p style="width:400px">홈짱닷컴의 홈페이지 제작강좌는 초보자를 대상으로 합니다. 그러므로 가능한 쉬운 용어를 일관성 있게 사용할려고 노력하고 있습니다.</p>
+	<p style="width:400px">홈짱닷컴의 HTML 강좌는 단순히 화면에 출력되는 문서의 모양만 설명하지 않고 보다 의미있는 HTML 문서를 작성하는 방법을 추구하고 있습니다.</p>
+	한글<br>만세
 	<ul>
 		<li>
 			1
 			<ul>
 				<li>
-					ㄱ
+				ㄱ
 				</li>
 				<li>
-					ㄴ
+				ㄴ
 				</li>
 				<li>
-					ㄷ
+				ㄷ
 					<ul>
-						<li>a</li>
-						<li>b</li>
-						<li>c</li>
+						<li>
+							a
+						</li>
+						<li>
+							b
+						</li>
+						<li>
+							c
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -109,26 +101,27 @@
 				<td>성적</td>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>김수원</td>
-				<td>자바</td>
-				<td>A</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>김수원</td>
-				<td>자바</td>
-				<td>B</td>
-			</tr>
-		</tbody>
+	
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>김수원</td>
+			<td>자바</td>
+			<td>A</td>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>김수원</td>
+			<td>자바</td>
+			<td>A</td>
+		</tr>
+	</tbody>
 	</table>
 	<a href="https:www.naver.com">네이버</a>
-	<a href="#div1" target="_blank">다음</a><br>
-	<iframe src="http://www.ppomppu.co.kr" name="ifrm"></iframe>
-	<style>
+	<a href="https:www.daum.net" target="_blank">다음</a>
+	<a href="#div2" target="_blank">div2</a><br>
+	<iframe src="http://www.ppomppu.co.kr/" name="abc" style="width:500px;height:500px"></iframe>
 
-	</style>
 </body>
 </html>

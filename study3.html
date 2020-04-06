@@ -11,6 +11,8 @@
 <input type="text" id="param1" /> + 
 <input type="text" id="param2" /> =
 <br/>
+
+<!-- span:inline태그 -->
 더하기 값 : <span id="mydiv1" style="font-weight: bold"></span> <br/>
 빼기 값 : <span id="mydiv2" style="font-weight: bold"></span> <br/>
 곱하기 값 : <span id="mydiv3" style="font-weight: bold"></span> <br/>
@@ -24,7 +26,7 @@
 > 값 : <span id="mydiv10" style="font-weight: bold"></span> <br/>
 !== 값 : <span id="mydiv11" style="font-weight: bold"></span> <br/>
 
-<button onclick="calc()">계산</button>
+<button onclick="calc()">계산</button> <!-- calc:계산하다 -->
 </body>
 
 
@@ -47,6 +49,9 @@ var param3 = 0;
 		document.getElementById("mydiv10").innerHTML = param1 > param2;		
 		document.getElementById("mydiv11").innerHTML = parseInt(param1) !== param2;		
 	}
+
+
+	
 	for(var i=0; i<=5; i++) {
 		
 	}

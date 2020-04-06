@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8"> -->
+	<title>문서 제목</title>
+
+	
+</head>
+<body>
+<input type="text" id="param1"> +	
+<input type="text" id="param2"> = <br>
+
+더하기 값 : <span id="mydiv1" style="font-weight: bold;"></span><br>
+빼기 값 : <span id="mydiv2" style="font-weight: bold;"></span><br>
+곱하기 값 : <span id="mydiv3" style="font-weight: bold;"></span><br>
+나누기 값 : <span id="mydiv4" style="font-weight: bold;"></span><br>
+나머지 값 : <span id="mydiv5" style="font-weight: bold;"></span><br>
+반복 값 : <span id="mydiv6" style="font-weight: bold;"></span><br>
+== 값 : <span id="mydiv7" style="font-weight: bold;"></span><br>
+!= 값 : <span id="mydiv8" style="font-weight: bold;"></span><br>
+< 값 : <span id="mydiv9" style="font-weight: bold;"></span><br>
+> 값 : <span id="mydiv10" style="font-weight: bold;"></span><br>
+!== 값 : <span id="mydiv11" style="font-weight: bold;"></span><br>
+
+<button onclick="calc()">계산</button>
+</body>
+
+
+<script>
+	function calc() {
+		var param1 = document.getElementById("param1").value;
+		var param2 = document.getElementById("param2").value;
+		//var param3 = 0;
+		
+		document.getElementById("mydiv1").innerHTML = parseInt(param1) + parseInt(param2);
+		document.getElementById("mydiv2").innerHTML =
+			parseInt(param1) - parseInt(param2);
+		document.getElementById("mydiv3").innerHTML = parseInt(param1) * parseInt(param2);
+		document.getElementById("mydiv4").innerHTML = parseInt(param1) / parseInt(param2);
+		document.getElementById("mydiv5").innerHTML = parseInt(param1) % parseInt(param2);
+
+		document.getElementById("mydiv7").innerHTML = parseInt(param1) == param2 && parseInt(param1) == param2 ? '참' : '거짓';
+		document.getElementById("mydiv8").innerHTML = param1 != param2;
+		document.getElementById("mydiv9").innerHTML = param1 < param2;
+		document.getElementById("mydiv10").innerHTML = param1 > param2;
+		document.getElementById("mydiv11").innerHTML = parseInt(param1) !== param2;
+	}
+
+
+
+	for(var i=0; i<=5; i++) {
+		
+	}
+	
+	if(1<1) {
+		
+	}
+	
+	
+	
+	
+</script>
+
+
+</html>
