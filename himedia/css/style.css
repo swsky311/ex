@@ -2,7 +2,7 @@
 
 header#header{_background-color: skyblue;}
 header#header>div.header_top{border-bottom: 1px solid #ddd;}
-header#header>div.header_top>nav.util{width: 980px; margin: 0 auto;_background-color: #fff;}
+header#header>div.header_top>nav.util{width: 980px; margin: 0 auto; _background-color: yellow;}
 
 nav.util>ul{float: right; position: relative;}
 nav.util>ul>li{float: left;}
