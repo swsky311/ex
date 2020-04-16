@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-<<<<<<< HEAD
+
 header#header{_background-color: skyblue;}
 header#header>div.header_top{border-bottom:1px solid #ddd;}
 header#header>div.header_top>nav.util{width: 980px; margin: 0 auto; _background-color: #ff0;}
@@ -23,9 +23,13 @@ div.header_bottom>nav.gnb>ul>li:first-child{border-left:1px solid #2867AD;}
 div.header_bottom>nav.gnb>ul>li>a{line-height: 40px; color:#fff; font-weight: bold}
 
 
-div.visual_wrap{background:#2a4778 url(../images/visual_bg01.jpg) no-repeat center; height: 400px;}
-div.visual_wrap>div.visual{width: 980px; height: 400px; _background-color: #f00; margin: 0 auto; position: relative;}
+div.visual_wrap{background:#2a4778 url(../images/visual_bg01.jpg)
+				no-repeat center; height: 400px;}
+				
+div.visual_wrap>div.visual{width: 980px; height: 400px; 
+							margin: 0 auto;_background-color: #f00;
+							position: relative;}
 
 div.visual_wrap>div.visual>img{position: absolute;}
 div.visual_wrap>div.visual>img.visual_text{top: 80px;}
-div.visual_wrap>div.visual>img.visual_img{right: 30px; top: 40px;}
+div.visual_wrap>div.visual>img.visual_img{top: 40px; right: 30px;}
